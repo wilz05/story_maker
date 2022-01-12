@@ -1,4 +1,7 @@
 const fontFamilyList = [
+  'Cairo',
+  'Changa',
+  'Almarai',
   'Lato',
   'Montserrat',
   'Lobster',

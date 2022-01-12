@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -48,6 +49,29 @@ class _MyAppState extends State<MyApp> {
                     MaterialPageRoute(
                       builder: (context) => StoryMaker(
                         filePath: file!.path,
+                        doneButtonChild: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Row(
+                              children: const [
+                                SizedBox(width: 4),
+                                Text(
+                                  'Done Editing',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 12,
+                                  ),
+                                ),
+                                SizedBox(width: 4),
+                                Icon(
+                                  CupertinoIcons.back,
+                                  color: Colors.black,
+                                  size: 18,
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   );

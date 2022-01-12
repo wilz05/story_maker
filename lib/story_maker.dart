@@ -268,6 +268,7 @@ class _StoryMakerState extends State<StoryMaker> {
               alignment: Alignment.bottomCenter,
               child: FooterToolsWidget(
                 onDone: _onDone,
+                doneButtonChild: widget.doneButtonChild,
               ),
             ),
           ],
